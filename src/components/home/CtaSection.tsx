@@ -1,25 +1,25 @@
 
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const CtaSection: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-care-700 to-care-600 text-white">
+    <section className="bg-care-50 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Find the Perfect Caregiver?</h2>
-        <p className="text-xl mb-8 max-w-3xl mx-auto">
-          Join thousands of families who have found reliable and compassionate care through ElderCareHub.
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Ready to find the perfect caregiver?
+        </h2>
+        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          Join thousands of families who have found reliable caregivers through CareConnect.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/providers">
-            <Button className="bg-white text-care-700 hover:bg-care-100 font-medium text-lg px-8 py-6">
-              Find a Caregiver
-            </Button>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link to="/signup">
+            <Button size="lg">Get Started</Button>
           </Link>
-          <Link to="/apply">
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-6">
-              Become a Caregiver
+          <Link to="/providers">
+            <Button variant="outline" size="lg">
+              Browse Caregivers
             </Button>
           </Link>
         </div>
