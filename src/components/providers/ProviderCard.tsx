@@ -50,7 +50,7 @@ const ProviderCard: React.FC<ProviderCardProps> = ({ provider }) => {
           </div>
         </Link>
         <div className="flex items-center justify-between p-4 bg-gray-50 border-t">
-          <div className="text-care-700 font-bold">${provider.hourlyRate}/hr</div>
+          <div className="text-care-700 font-bold">₹{provider.hourlyRate}/hr</div>
           <div className="space-x-2">
             <Button size="sm" variant="outline">Message</Button>
             <Link to={`/providers/${provider.id}`}>
